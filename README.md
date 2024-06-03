@@ -14,11 +14,11 @@ and where not, this will be noted in the samples.
     web search and summarizing the results based on the snippets that are
     returned.
 
-* [HN Answers](./hn_answers.py)
+* [Ask Reddit](./ask_reddit.py)
 
-    Shows how to use the Hacker News API to get the recent Ask HN posts and
+    Shows how to use the Reddit API to get the recent Ask Reddit posts and
     then use the Open AI API to summarize the answers to the questions. Adds
-    those answers to the Google Sheets and also powers a tiwtter bot.
+    those answers to the Google Sheets and also powers a twitter bot.
 
 * [Mandelbrot Set](./mandelbrot.py)
 
