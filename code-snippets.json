@@ -1,11 +1,11 @@
 [
   {
-    "name": "A Simple Function",
+    "name": "💡 A Simple Function",
     "description": "Get started by writing a simple function that is callable from your spreadsheet.",
     "code": "def add(a, b):\n    return a + b"
   },
   {
-    "name": "A Streamlit App",
+    "name": "🚀 A Streamlit App",
     "description": "Add a UI to your spreadsheet using Streamlit",
     "code": "import neptyne as nt\nimport streamlit as st\n\n@nt.streamlit\ndef app():\n    st.title('Hello, world!')"
   }
