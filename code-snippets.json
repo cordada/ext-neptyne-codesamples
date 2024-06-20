@@ -7,7 +7,7 @@
   {
     "name": "🧑‍💻 Fetch Some Data",
     "description": "Use Python to fetch data from a REST API",
-    "code": "\nimport requests\n\n\ndef get_posts():\n    url = \"https://jsonplaceholder.typicode.com/posts\"\n\n    response = requests.get(url)\n    response.raise_for_status()\n    return [[post[\"userId\"], post[\"title\"]] for post in response.json()]\n\n"
+    "code": "import requests\n\n\ndef get_posts():\n    url = \"https://jsonplaceholder.typicode.com/posts\"\n\n    response = requests.get(url)\n    response.raise_for_status()\n    return [[post[\"userId\"], post[\"title\"]] for post in response.json()]\n\n"
   },
   {
     "name": "🚀 A Custom UI",
