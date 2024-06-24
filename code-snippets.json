@@ -12,6 +12,6 @@
   {
     "name": "🚀 Build a UI",
     "description": "Build a UI using Streamlit",
-    "code": "import neptyne as nt\nimport streamlit as st\n\n@nt.streamlit\ndef app():\n    st.title('Hello, world!')\n"
+    "code": "import neptyne as nt\nimport streamlit as st\n\n@nt.streamlit\ndef app():\n    st.title('Hello, world!')\n    st.write(f'The value of A1 is: {A1}')\n"
   }
 ]
