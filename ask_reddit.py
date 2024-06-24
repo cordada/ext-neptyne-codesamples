@@ -52,8 +52,8 @@ def call_ai(prompt):
 
 def get_reddit_posts(subreddit_name: str, limit: int = 10):
     reddit = praw.Reddit(
-        client_id='OWXEgabGO80TYDDMmUJFRA',
-        client_secret='f6JUMdyBSHVnnfg0i-ATEzFiW9npYw',
+        client_id=nt.get_secret("REDDIT"),
+        client_secret=nt.get_secret("REDDIT_SECRET"),
         user_agent=USER_AGENT,
         username=USER_NAME,
     )
