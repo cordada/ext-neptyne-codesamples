@@ -2,7 +2,7 @@
   {
     "name": "💡 A Simple Function",
     "description": "Call Python from your spreadsheet",
-    "code": "def add(a, b):\n    return a + b"
+    "code": "def add(a, b):\n    return a + b\n"
   },
   {
     "name": "🧑‍💻 Fetch Some Data",
@@ -12,6 +12,6 @@
   {
     "name": "🚀 Build a UI",
     "description": "Build a UI using Streamlit",
-    "code": "import neptyne as nt\nimport streamlit as st\n\n@nt.streamlit\ndef app():\n    st.title('Hello, world!')"
+    "code": "import neptyne as nt\nimport streamlit as st\n\n@nt.streamlit\ndef app():\n    st.title('Hello, world!')\n"
   }
 ]
