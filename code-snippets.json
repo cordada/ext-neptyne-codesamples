@@ -2,16 +2,16 @@
   {
     "name": "💡 A Simple Function",
     "description": "Call Python from your spreadsheet",
-    "code": "def add(a, b):\n    return a + b\n"
+    "code": "def add(a, b):\n    \"\"\"To use this:\n\n    * Put a value into A1\n    * Put another into B1\n    * Enter into C1: '=Py(\"add\", A1, B1)'\n\n    \"\"\"\n    return a + b\n"
   },
   {
     "name": "🧑‍💻 Fetch Some Data",
-    "description": "Fetch data with a REST API",
-    "code": "import requests\n\n\ndef get_posts():\n    url = \"https://jsonplaceholder.typicode.com/posts\"\n\n    response = requests.get(url)\n    response.raise_for_status()\n    return [[post[\"userId\"], post[\"title\"]] for post in response.json()]\n\n"
+    "description": "Fetch weather data with a REST API",
+    "code": "import requests\n\nHEADERS = {'User-Agent': \"Neptyne/1.0 (https://www.neptyne.com; team@neptyne.com)\"}\n\n\ndef update_weather():\n    url = \"https://api.met.no/weatherapi/locationforecast/2.0/compact?lat=52&lon=13\"\n    data = requests.get(url, headers=HEADERS).json()\n    A2 = data['properties']['timeseries'][0]['data']['instant']['details'].items()\n\n"
   },
   {
     "name": "🚀 Build a UI",
     "description": "Build a UI using Streamlit",
-    "code": "import neptyne as nt\nimport streamlit as st\n\n@nt.streamlit\ndef app():\n    st.title('Hello, world!')\n    st.write(f'The value of A1 is: {A1}')\n"
+    "code": "import neptyne as nt\nimport streamlit as st\n\n\n@nt.streamlit\ndef app():\n    st.title('Hello, world!')\n    if st.button(\"Increase A1\"):\n        A1 += 1\n    st.write(f'The value of A1 is: {A1}')\n"
   }
 ]
